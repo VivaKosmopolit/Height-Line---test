@@ -495,7 +495,7 @@ main {
     margin-top: 60px;
     margin-bottom: 30px;
     position: relative;
-    font-size: 18px;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1980 - 300)));
     text-transform: uppercase;
     color: #1a62af;
 }
