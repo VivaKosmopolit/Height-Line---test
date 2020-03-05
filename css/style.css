@@ -32,9 +32,18 @@ header {
 }
 
 /* Header info section */
+.header-introduction {
+    position: relative;
+}
+
 .header-info-section {
     height: 90px;
     position: relative;
+}
+
+.w-frame {
+    position: absolute;
+    right: -10%;
 }
 
 .header-info-section .container {
@@ -217,9 +226,9 @@ header {
 
 /* Main Header content */
 h1 {
-    width: 220px;
+    width: calc(110px + (220 - 110) * ((100vw - 300px) / (1980 - 400)));
     display: inline-block;
-    font-size: 64px;
+    font-size: calc(28px + (64 - 28) * ((100vw - 300px) / (1980 - 300)));
     font-weight: 900;
     text-transform: uppercase;
     color: #15274b;
@@ -232,19 +241,20 @@ h1 {
 
 .main-title {
     margin-right: 10%;
+    z-index: 20;
 }
 
 .main-title > p {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));
     font-weight: bold;
     color: #15274b;
 }
 
 .sale {
-    font-size: 35px;
     font-weight: 900;
     color: #e31e24;
+    font-size: calc(19px + (35 - 19) * ((100vw - 300px) / (1980 - 300)));
 }
 
 .present-section {
@@ -294,6 +304,7 @@ h1 {
 
 .services {
     margin-top: 40px;
+    z-index: 20;
 }
 
 .services li + li {
@@ -305,9 +316,14 @@ h1 {
     vertical-align: middle;
 }
 
+.services img {
+    width: calc(64px + (94 - 64) * ((100vw - 300px) / (1980 - 300)));
+}
+
 .services p {
     width: 175px;
     color: #1f2327;
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1680 - 300)));
     font-weight: bold;
 }
 
@@ -356,8 +372,8 @@ h1 {
     content: '\f879';
 }
 
-.form-wrapper input + input {
-    margin: 0 5px;
+.inp-wrapper:nth-child(2) {
+    margin: 0 7px;
 }
 
 .form-wrapper input::placeholder {
@@ -404,7 +420,7 @@ h1 {
 
 /* Main section */
 main {
-    height: 150vh;
+    height: 100vh;
 }
 
 .advantages-wrapper {

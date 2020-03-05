@@ -1,15 +1,16 @@
-@media screen and (max-width: 1250px) {
-    h1 {
-        width: 200px;
-        font-size: 55px;
+@media screen and (max-width: 1366px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    header {
+        background-position-x: 70%;
     }
 
     .sale {
-        font-size: 30px;
-    }
-
-    .main-title p {
-        font-size: 22px;
+/*        font-size: 30px;*/
     }
 
     .header-top nav li a {
@@ -19,7 +20,6 @@
 
     .container {
         width: 80%;
-        border: 1px solid red;
     }
 
     .h-address {
@@ -42,10 +42,6 @@
         justify-content: space-between;
     }
 
-    main .container {
-        border: 1px solid blue;
-    }
-
     .advantages-wrapper>:nth-child(2) {
         margin: unset;
     }
@@ -57,9 +53,25 @@
     .advantages-wrapper {
         flex-wrap: wrap;
     }
+
+    .main-title {
+        margin-right: 5%;
+    }
+
+    .w-frame {
+        width: 28%;
+    }
 }
 
 @media screen and (max-width: 1130px) {
+    header {
+        height: 135vh;
+    }
+
+    .advantages-wrapper {
+        margin-top: 20%;
+    }
+
     .burger-wrapper {
         display: block;
     }
@@ -89,6 +101,14 @@
 
     .mobile-content {
         padding-left: 40px;
+    }
+
+    .header-top nav li a {
+        font-size: 16px;
+    }
+
+    .mobile-content li {
+        font-size: 14px;
     }
 
     .mobile-content .h-address {
@@ -137,10 +157,175 @@
     .header-top nav li:hover a {
         color: #fff;
     }
+
+    .main-title {
+        margin-right: 0;
+    }
+
+    .header-introduction {
+        flex-direction: column;
+    }
+
+    .w-frame {
+        top: unset;
+        width: 50%;
+        bottom: 5%;
+    }
+
+    .present-section> img {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .engineer-call-btn {
+        margin-top: 10px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inp-wrapper {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .form-wrapper form > span:before {
+        left: 1%;
+    }
+
+    .form-wrapper h2 {
+        width: auto;
+        margin: 0 auto 15px auto;
+        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .agree-box svg {
+    }
+
+    .form-input {
+        padding: 17px 0 17px 70px;
+    }
+
+    .engineer-call-btn {
+        padding: 17px 30px;
+    }
+
+    .services li + li {
+        margin: 10px 0;
+    }
+
+    .services p {
+        margin-left: 10px;
+    }
+
+    .form-wrapper form > span:before {
+        height: 44px;
+        width: 44px;
+        line-height: 44px;
+        left: 7px;
+        transform: translateY(-51%);
+    }
+
+    .gift-wrapper {
+        height: 100px;
+    }
+    .gift-wrapper p {
+        font-size: 20px;
+    }
+
+    .advantages-wrapper>:first-child {
+        margin-right: 20px;
+    }
+
+    .advantage {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .advantages-wrapper>:nth-child(2) {
         margin-bottom: 10%;
+    }
+
+    .gift-wrapper {
+        height: 80px;
+    }
+
+    .gift-wrapper svg {
+        width: 40px;
+        height: 40px;
+        margin: 0 20px 0 20px;
+    }
+
+    .gift-wrapper p {
+        font-size: 18px;
+    }
+
+    .advantages-wrapper>:first-child {
+        margin-right: 0;
+    }
+
+    .present-section> img {
+        bottom: 0%;
+        width: 60px;
+    }
+
+    .w-frame {
+        top: unset;
+        width: 50%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .present-section> img {
+        bottom: 0;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header, main {
+        height: 100%;
+    }
+
+    form {
+        padding-bottom: 20%;
+    }
+
+    .advantages-wrapper {
+        margin: 80px 0;
+    }
+
+    .w-frame {
+        top: unset;
+        width: 50%;
+        bottom: 5%;
+    }
+
+    .present-section> img {
+        position: absolute;
+        bottom: 0%;
+        width: 50px;
+        right: -10%;
+    }
+
+    .advantage {
+        margin-bottom: unset;
+    }
+
+    .advantages-wrapper>:nth-child(2) {
+        margin: 80px 0;
     }
 }
