@@ -34,6 +34,7 @@ header {
 /* Header info section */
 .header-info-section {
     height: 90px;
+    position: relative;
 }
 
 .header-info-section .container {
@@ -117,7 +118,7 @@ header {
     background-image: url(../img/salon-icon.png);
 }
 
-.h-address ul > :last-child:before {
+.h-address ul > :last-child:before, .mobile-content .h-address ul > :first-child:before {
     width: 16px;
     height: 16px;
     background-image: url(../img/clock-icon.png);
@@ -233,7 +234,7 @@ h1 {
     margin-right: 10%;
 }
 
-.main-title p {
+.main-title > p {
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -248,10 +249,47 @@ h1 {
 
 .present-section {
     margin-top: 40px;
+    display: flex;
+    user-select: none;
 }
 
-.present-section>:first-child {
+.present-section> img {
     margin-right: 15px;
+}
+
+.gift-wrapper {
+    width: 390px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #e9f2fc;
+    border-radius: 5px;
+    background-image: url(../img/bg-stripes.png);
+}
+
+.gift-wrapper svg  {
+    width: 70px;
+    height: 60px;
+    margin: 0 20px 0 30px;
+}
+
+.gift-wrapper p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a62af;
+}
+
+.gift-wrapper:before {
+    content: '';
+    position: absolute;
+    width: 97%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #81aad5;
+    border-radius: 3px;
 }
 
 .services {
@@ -366,13 +404,14 @@ h1 {
 
 /* Main section */
 main {
-    height: 100vh;
+    height: 150vh;
 }
 
 .advantages-wrapper {
     margin-top: 10%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .advantage-icon svg {
@@ -544,3 +583,54 @@ main {
     opacity: 0;
     transition: all .6s ease;
 }
+
+/* Burger button styles*/
+.mobile-content {
+    display: none;
+}
+
+.burger-wrapper {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.burger-btn {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.burger-btn span {
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    background-color: #1a62af;
+}
+
+.burger-btn span:before, .burger-btn span:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    position: absolute;
+    background-color: #1a62af;
+    transition: .3s;
+}
+
+.burger-btn span:before { transform: translateY(-5px); }
+.burger-btn span:after { transform: translateY(5px); }
+.burger_active span { height: 0; }
+.burger_active span:before { transform: rotate(45deg); }
+.burger_active span:after { transform: rotate(-45deg); }

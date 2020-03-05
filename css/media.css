@@ -1,0 +1,146 @@
+@media screen and (max-width: 1250px) {
+    h1 {
+        width: 200px;
+        font-size: 55px;
+    }
+
+    .sale {
+        font-size: 30px;
+    }
+
+    .main-title p {
+        font-size: 22px;
+    }
+
+    .header-top nav li a {
+        padding: 0 20px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 80%;
+        border: 1px solid red;
+    }
+
+    .h-address {
+        margin: 0;
+    }
+
+    .h-address li {
+        font-size: 12px;
+    }
+
+    .h-address:before, .h-address:after {
+        display: none;
+    }
+
+    .logo-wrapper p {
+        margin: 0 5px 0 15px;
+    }
+
+    .header-info-section .container {
+        justify-content: space-between;
+    }
+
+    main .container {
+        border: 1px solid blue;
+    }
+
+    .advantages-wrapper>:nth-child(2) {
+        margin: unset;
+    }
+
+    .advantage {
+        margin-bottom: 10%;
+    }
+
+    .advantages-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .burger-wrapper {
+        display: block;
+    }
+
+    .header-info-section {
+        background-color: #fff;
+    }
+
+    .logo-wrapper>:first-child {
+        margin-right: 20px;
+    }
+
+    nav, .container .h-contacts, .container .h-address, .logo-wrapper p {
+        display: none;
+    }
+
+    .header-top nav {
+        background-color: #fff;
+    }
+
+    .header-top nav li {
+        padding-left: 20px;
+        text-align: left;
+        display: block;
+        border-bottom: 1px solid #e7f3ff;
+    }
+
+    .mobile-content {
+        padding-left: 40px;
+    }
+
+    .mobile-content .h-address {
+        padding: 20px 0 10px 0;
+        display: block;
+    }
+
+    .mobile-content .h-address li {
+        border-bottom: unset;
+    }
+
+    .mobile-content .h-address li:hover {
+        background-color: unset;
+    }
+
+    .mobile-content .h-contacts {
+        padding: 10px 0;
+        width: 150px;
+    }
+
+    .tel-number {
+        padding-left: 20px;
+        display: inline-block;
+    }
+
+    .tel-number:before {
+        top: 20%;
+    }
+
+    .header-top nav li a {
+        color: #1a62af;
+    }
+
+    .header-top nav li:not(:first-child):before {
+        content: unset;
+    }
+
+    .mobile-content .h-address ul > :first-child:before {
+        left: -2px;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .header-top nav li:hover a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .advantages-wrapper>:nth-child(2) {
+        margin-bottom: 10%;
+    }
+}
