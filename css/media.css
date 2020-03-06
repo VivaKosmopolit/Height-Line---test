@@ -300,6 +300,10 @@
         height: 100%;
     }
 
+    .container {
+        width: 90%;
+    }
+
     form {
         padding-bottom: 20%;
     }
@@ -310,15 +314,46 @@
 
     .w-frame {
         top: unset;
-        width: 50%;
-        bottom: 5%;
+        width: 40%;
+        right: -4%;
+        bottom: 10%;
+    }
+
+    .services ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services ul>:first-child {
+        order: 3;
+    }
+
+    .services ul>:nth-child(2) {
+        order: 2;
+        margin: 15px 0;
+    }
+
+    .services ul>:last-child {
+        order: 0;
+    }
+
+    .services p {
+        margin-left: 5px;
+    }
+
+    .services li + li {
+        margin: 0;
     }
 
     .present-section> img {
         position: absolute;
-        bottom: 0%;
-        width: 50px;
-        right: -10%;
+        bottom: 5%;
+        width: 40px;
+        right: -5%;
+    }
+
+    .agree-box {
+        font-size: 9px;
     }
 
     .advantage {
